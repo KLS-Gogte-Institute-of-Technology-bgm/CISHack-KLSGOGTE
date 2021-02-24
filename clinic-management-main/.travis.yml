@@ -1,0 +1,20 @@
+sudo: required
+services:
+   - docker
+
+env:
+   global:
+      - SHA=$(git rev-parse HEAD)
+
+script:
+   - echo "****No testing specified****"
+   - echo "***Building Image***"
+
+after_success:
+   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
+
+deploy:
+   provider: script
+   script: bash ./docker-deploy.sh
+   on:
+      branch: main

@@ -3,11 +3,6 @@
 # Clinic-Management-System
 A platform where the patient can book an appointment with the doctor
 
-
-## Team Akatsuki 
-## ppt url - https://docs.google.com/presentation/d/1OF-lSsUTQv-SMzafBhUrue7xoMjBrmtDqqmqT1ADCO4/edit#slide=id.p
-
-
 #### To immediately get started just run the following commands:
 ```
 $ git clone https://github.com/shreyasssk/clinic-management.git

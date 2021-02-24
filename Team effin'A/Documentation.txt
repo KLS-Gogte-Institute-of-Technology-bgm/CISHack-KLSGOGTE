@@ -1,0 +1,7 @@
+Project desc:
+Its An assisted LMS application designed for school and prep students.
+
+Contents:
+A dummy android application
+A sample database dump
+PPT

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MainActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        app:cardElevation="20dp"
+        android:id="@+id/cv1"
+        app:cardCornerRadius="13dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="30dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Log in to your eLearning account"
+                android:textStyle="bold"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="sans-serif-black"
+                android:textSize="16sp"/>
+
+            <EditText
+                android:layout_width="300dp"
+                android:layout_marginTop="40dp"
+                android:layout_height="wrap_content"
+                android:hint="Phone number"
+                android:inputType="phone"
+                android:id="@+id/etPhone"/>
+
+            <EditText
+                android:layout_width="300dp"
+                android:layout_marginTop="5dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/etPhone"
+                android:hint="Password"
+                android:id="@+id/etPassword"
+                android:inputType="textPassword"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/etPassword"
+                android:text="Sign in"
+                android:id="@+id/btnSignIn"
+                android:layout_marginTop="20dp"/>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        app:cardElevation="20dp"
+        android:id="@+id/cv2"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/cv1"
+        app:cardCornerRadius="13dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New to eLearning? Register now!"
+                android:textStyle="bold"
+                android:id="@+id/tv1"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="sans-serif-black"
+                android:textSize="16sp"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="Sign up now"
+                android:id="@+id/btnSignUp"
+                android:layout_below="@+id/tv1"
+                android:layout_marginTop="10dp"/>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
